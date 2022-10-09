@@ -45,7 +45,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" pref="646" max="32767" attributes="0"/>
+                  <Component id="jLabel1" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -54,7 +54,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel1" pref="485" max="32767" attributes="0"/>
+                  <Component id="jLabel1" pref="276" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -62,6 +62,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt; &lt;b&gt;Relat&#xf3;rio sobre o uso da progress bar&lt;/b&gt;&lt;/center&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;   sobre o jprogressbar, este elemento &#xe9; um componente que mostra o progresso de uma tarefa&lt;br&gt;  ele &#xe9; usado principalmente para tarefas que demoram muito tempo para serem conclu&#xed;das,&lt;br&gt;  como a c&#xf3;pia de um arquivo ou a transfer&#xea;ncia de um arquivo de um servidor para o &lt;br&gt;  computador do usu&#xe1;rio, porem neste caso foi implementado apenas para fins de estudo.&lt;br&gt;  sobre seu c&#xf3;digo, ele &#xe9; composto por um valor minimo, um valor maximo e um valor atual&lt;br&gt;  o valor minimo &#xe9; o valor minimo que o progresso pode ter, o valor maximo &#xe9; o valor maximo&lt;br&gt;  que o progresso pode ter e o valor atual &#xe9; o valor atual do progresso, este valor &#xe9;&lt;br&gt;  incrementado a cada itera&#xe7;&#xe3;o de loop de repeti&#xe7;&#xe3;o ou uma etapa de um processo, &lt;br&gt; "/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

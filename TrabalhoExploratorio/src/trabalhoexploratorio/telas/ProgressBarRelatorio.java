@@ -33,20 +33,22 @@ public class ProgressBarRelatorio extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
 
+        jLabel1.setText("<html><center> <b>Relatório sobre o uso da progress bar</b></center> <br> <br> <br> <br>   sobre o jprogressbar, este elemento é um componente que mostra o progresso de uma tarefa<br>  ele é usado principalmente para tarefas que demoram muito tempo para serem concluídas,<br>  como a cópia de um arquivo ou a transferência de um arquivo de um servidor para o <br>  computador do usuário, porem neste caso foi implementado apenas para fins de estudo.<br>  sobre seu código, ele é composto por um valor minimo, um valor maximo e um valor atual<br>  o valor minimo é o valor minimo que o progresso pode ter, o valor maximo é o valor maximo<br>  que o progresso pode ter e o valor atual é o valor atual do progresso, este valor é<br>  incrementado a cada iteração de loop de repetição ou uma etapa de um processo, <br> ");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 646, Short.MAX_VALUE)
+                .addComponent(jLabel1)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 485, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
