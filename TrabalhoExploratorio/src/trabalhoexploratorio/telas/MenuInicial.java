@@ -33,7 +33,6 @@ public class MenuInicial extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         botaoProgreesBar = new javax.swing.JButton();
 
@@ -43,7 +42,12 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jLabel1.setText("=-=-=-=-=-=-=-=-MENU INICIAL=-=-=-=-=-=-=-=-");
 
-        jButton2.setText("jButton2");
+        jButton2.setText("<<Scroll Bar com Table>>");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("jButton3");
 
@@ -52,8 +56,6 @@ public class MenuInicial extends javax.swing.JFrame {
         jButton5.setText("jButton5");
 
         jButton6.setText("jButton6");
-
-        jButton7.setText("jButton7");
 
         jButton8.setBackground(new java.awt.Color(51, 153, 255));
         jButton8.setText("CREDITOS");
@@ -80,7 +82,6 @@ public class MenuInicial extends javax.swing.JFrame {
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botaoProgreesBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -101,9 +102,7 @@ public class MenuInicial extends javax.swing.JFrame {
                 .addComponent(jButton5)
                 .addGap(30, 30, 30)
                 .addComponent(jButton6)
-                .addGap(30, 30, 30)
-                .addComponent(jButton7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
                 .addComponent(jButton8)
                 .addContainerGap())
         );
@@ -130,6 +129,10 @@ public class MenuInicial extends javax.swing.JFrame {
         this.dispose();
         
     }//GEN-LAST:event_botaoProgreesBarActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,7 +176,6 @@ public class MenuInicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
