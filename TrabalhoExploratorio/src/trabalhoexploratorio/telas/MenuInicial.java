@@ -4,9 +4,11 @@
  */
 package trabalhoexploratorio.telas;
 
-/**
+/**  TRABALHO EXPLORATORIO DE PROGRAMÇÃO ORIENTADA A OBJETOS - 2022/10
  *
- * @author tributech-josepereira
+ * @author José Samuel Pereira                 - Ra: 22016916-2 - Pura Fome
+ * @author Karla duarte Ferreira               - Ra: 21144154-2
+ * @author eduardo richard da silva nascimento - Ra: 21161812-2
  */
 public class MenuInicial extends javax.swing.JFrame {
 
@@ -28,7 +30,7 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        scrollTable = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -42,10 +44,10 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jLabel1.setText("=-=-=-=-=-=-=-=-MENU INICIAL=-=-=-=-=-=-=-=-");
 
-        jButton2.setText("<<Scroll Bar com Table>>");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        scrollTable.setText("<<Scroll Bar com Table>>");
+        scrollTable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                scrollTableActionPerformed(evt);
             }
         });
 
@@ -77,7 +79,7 @@ public class MenuInicial extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1))
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(scrollTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -93,7 +95,7 @@ public class MenuInicial extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addComponent(botaoProgreesBar)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2)
+                .addComponent(scrollTable)
                 .addGap(30, 30, 30)
                 .addComponent(jButton3)
                 .addGap(30, 30, 30)
@@ -130,9 +132,12 @@ public class MenuInicial extends javax.swing.JFrame {
         
     }//GEN-LAST:event_botaoProgreesBarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void scrollTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scrollTableActionPerformed
+        // botão para abrir a tela ScrollBarTable e fechar a tela atual
+
+        new ScrollbarComTable().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_scrollTableActionPerformed
 
     /**
      * @param args the command line arguments
@@ -171,7 +176,6 @@ public class MenuInicial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoProgreesBar;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -179,5 +183,6 @@ public class MenuInicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton scrollTable;
     // End of variables declaration//GEN-END:variables
 }
