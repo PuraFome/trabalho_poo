@@ -71,6 +71,11 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jButton8.setBackground(new java.awt.Color(51, 153, 255));
         jButton8.setText("CREDITOS");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         botaoProgreesBar.setText("<<Progess Bar>>");
         botaoProgreesBar.addActionListener(new java.awt.event.ActionListener() {
@@ -160,6 +165,13 @@ public class MenuInicial extends javax.swing.JFrame {
         new Slider1().setVisible(true);  
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // botão para abrir a tela de creditos e fechar a tela atual
+        new Creditos().setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
