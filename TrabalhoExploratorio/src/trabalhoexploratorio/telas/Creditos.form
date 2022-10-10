@@ -42,7 +42,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="ff" red="cc" type="rgb"/>
+          <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
       </Properties>
 
@@ -65,8 +65,8 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="37" max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" pref="138" max="-2" attributes="0"/>
+                  <EmptySpace pref="27" max="32767" attributes="0"/>
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
               </Group>
@@ -76,7 +76,13 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="VOLTAR"/>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;VOLTAR&lt;/b&gt;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -84,7 +90,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&lt;center&gt;  TRABALHO EXPLORATORIO DE PROGRAM&#xc7;&#xc3;O ORIENTADA A OBJETOS - 2022/10  &lt;/b&gt;&lt;/center&gt; &lt;center&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;Jos&#xe9; Samuel Pereira                           - Ra: 22016916-2  &lt;br&gt;Karla duarte Ferreira                           - Ra: 21144154-2   &lt;br&gt;Eduardo richard da silva nascimento  - Ra: 21161812-2  "/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;b&gt;&lt;center&gt;  TRABALHO EXPLORATORIO DE PROGRAM&#xc7;&#xc3;O ORIENTADA A OBJETOS - 2022/10  &lt;/b&gt;&lt;/center&gt; &lt;center&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt;Jos&#xe9; Samuel Pereira                           - &lt;b&gt;Ra: 22016916-2&lt;/b&gt; &lt;br&gt;Karla Duarte Ferreira                           - &lt;b&gt;Ra: 21144154-2&lt;/b&gt;   &lt;br&gt;Eduardo Richard da Silva Nascimento  - &lt;b&gt;Ra: 21161812-2 &lt;/b&gt;"/>
           </Properties>
         </Component>
       </SubComponents>

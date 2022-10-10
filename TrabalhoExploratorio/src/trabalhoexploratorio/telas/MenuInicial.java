@@ -39,10 +39,12 @@ public class MenuInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        fundo_menu.setBackground(new java.awt.Color(204, 255, 204));
+        fundo_menu.setBackground(new java.awt.Color(153, 153, 153));
 
-        jLabel1.setText("=-=-=-=-=-=-=-=-MENU INICIAL=-=-=-=-=-=-=-=-");
+        jLabel1.setText("<html> <font size=\"7\"> <b>MENU</b>");
 
+        scrollTable.setBackground(new java.awt.Color(0, 0, 0));
+        scrollTable.setForeground(new java.awt.Color(255, 255, 255));
         scrollTable.setText("<<Table e Scroll Bar>>");
         scrollTable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -50,6 +52,8 @@ public class MenuInicial extends javax.swing.JFrame {
             }
         });
 
+        chekbox.setBackground(new java.awt.Color(0, 0, 0));
+        chekbox.setForeground(new java.awt.Color(255, 255, 255));
         chekbox.setText("<<CheckBox>>");
         chekbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,6 +61,8 @@ public class MenuInicial extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setBackground(new java.awt.Color(0, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("<<Slider>>");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,28 +70,35 @@ public class MenuInicial extends javax.swing.JFrame {
             }
         });
 
-        colorchoise.setText("TESTE DE CORES COLOR CHOOSER");
+        colorchoise.setBackground(new java.awt.Color(0, 0, 0));
+        colorchoise.setForeground(new java.awt.Color(255, 255, 255));
+        colorchoise.setText("<<Color Chooser>>");
         colorchoise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 colorchoiseActionPerformed(evt);
             }
         });
 
-        telaspinner.setText("CALCULADORA SPINNER");
+        telaspinner.setBackground(new java.awt.Color(0, 0, 0));
+        telaspinner.setForeground(new java.awt.Color(255, 255, 255));
+        telaspinner.setText("<<Spinner>>");
         telaspinner.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 telaspinnerActionPerformed(evt);
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(51, 153, 255));
-        jButton8.setText("CREDITOS");
+        jButton8.setBackground(new java.awt.Color(0, 102, 0));
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("<html> <b>CREDITOS</b>");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
 
+        botaoProgreesBar.setBackground(new java.awt.Color(0, 0, 0));
+        botaoProgreesBar.setForeground(new java.awt.Color(255, 255, 255));
         botaoProgreesBar.setText("<<Progess Bar>>");
         botaoProgreesBar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,22 +113,23 @@ public class MenuInicial extends javax.swing.JFrame {
             .addGroup(fundo_menuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(fundo_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fundo_menuLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1))
-                    .addComponent(scrollTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(scrollTable, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
                     .addComponent(chekbox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(colorchoise, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(telaspinner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton8)
                     .addComponent(botaoProgreesBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(fundo_menuLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         fundo_menuLayout.setVerticalGroup(
             fundo_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(fundo_menuLayout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(botaoProgreesBar)
                 .addGap(30, 30, 30)
@@ -129,7 +143,7 @@ public class MenuInicial extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(telaspinner)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
-                .addComponent(jButton8)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -182,6 +196,21 @@ public class MenuInicial extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton8ActionPerformed
 
+      private void colorchoiseActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // botão para abrir a tela de creditos e fechar a tela atual
+        
+        new ColorChoise().setVisible(true);
+        this.dispose();
+        
+    }     
+      
+    private void telaspinnerActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // botão para abrir a tela de creditos e fechar a tela atual
+        
+        new Spinner().setVisible(true);
+        this.dispose();
+        
+    }      
     /**
      * @param args the command line arguments
      */
@@ -222,7 +251,6 @@ public class MenuInicial extends javax.swing.JFrame {
     private javax.swing.JButton chekbox;
     private javax.swing.JButton colorchoise;
     private javax.swing.JPanel fundo_menu;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
