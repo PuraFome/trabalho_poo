@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package trabalhoexploratorio.telas;
 
 /**  TRABALHO EXPLORATORIO DE PROGRAMÇÃO ORIENTADA A OBJETOS - 2022/10
  *
  * @author José Samuel Pereira                 - Ra: 22016916-2 - Pura Fome
- * @author Karla duarte Ferreira               - Ra: 21144154-2
- * @author eduardo richard da silva nascimento - Ra: 21161812-2
+ * @author Karla Duarte Ferreira               - Ra: 21144154-2
+ * @author Eduardo Richard da Silva Nascimento - Ra: 21161812-2 - richwrd
  */
+
 public class MenuInicial extends javax.swing.JFrame {
 
     /**
      * Creates new form MenuInicial
      */
+    
     public MenuInicial() {
         initComponents();
     }
@@ -28,19 +27,19 @@ public class MenuInicial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        fundo_menu = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         scrollTable = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        colorchoise = new javax.swing.JButton();
+        telaspinner = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         botaoProgreesBar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
+        fundo_menu.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel1.setText("=-=-=-=-=-=-=-=-MENU INICIAL=-=-=-=-=-=-=-=-");
 
@@ -52,15 +51,35 @@ public class MenuInicial extends javax.swing.JFrame {
         });
 
         jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("jButton4");
 
-        jButton5.setText("jButton5");
+        colorchoise.setText("TESTE DE CORES COLOR CHOOSER");
+        colorchoise.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                colorchoiseActionPerformed(evt);
+            }
+        });
 
-        jButton6.setText("jButton6");
+        telaspinner.setText("CALCULADORA SPINNER");
+        telaspinner.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telaspinnerActionPerformed(evt);
+            }
+        });
 
         jButton8.setBackground(new java.awt.Color(51, 153, 255));
         jButton8.setText("CREDITOS");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         botaoProgreesBar.setText("<<Progess Bar>>");
         botaoProgreesBar.addActionListener(new java.awt.event.ActionListener() {
@@ -69,28 +88,28 @@ public class MenuInicial extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout fundo_menuLayout = new javax.swing.GroupLayout(fundo_menu);
+        fundo_menu.setLayout(fundo_menuLayout);
+        fundo_menuLayout.setHorizontalGroup(
+            fundo_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fundo_menuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(fundo_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, fundo_menuLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1))
                     .addComponent(scrollTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(colorchoise, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(telaspinner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(botaoProgreesBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        fundo_menuLayout.setVerticalGroup(
+            fundo_menuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fundo_menuLayout.createSequentialGroup()
                 .addComponent(jLabel1)
                 .addGap(35, 35, 35)
                 .addComponent(botaoProgreesBar)
@@ -101,9 +120,9 @@ public class MenuInicial extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jButton4)
                 .addGap(30, 30, 30)
-                .addComponent(jButton5)
+                .addComponent(colorchoise)
                 .addGap(30, 30, 30)
-                .addComponent(jButton6)
+                .addComponent(telaspinner)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
                 .addComponent(jButton8)
                 .addContainerGap())
@@ -113,12 +132,12 @@ public class MenuInicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(fundo_menu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fundo_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -138,6 +157,27 @@ public class MenuInicial extends javax.swing.JFrame {
         new ScrollbarComTable().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_scrollTableActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void colorchoiseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorchoiseActionPerformed
+        //abrir tela de escolher cores e fechar menu inicial
+        
+        new ColorChoise().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_colorchoiseActionPerformed
+
+    private void telaspinnerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telaspinnerActionPerformed
+        
+        new Spinner().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_telaspinnerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,13 +216,13 @@ public class MenuInicial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton botaoProgreesBar;
+    private javax.swing.JButton colorchoise;
+    private javax.swing.JPanel fundo_menu;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton scrollTable;
+    private javax.swing.JButton telaspinner;
     // End of variables declaration//GEN-END:variables
 }
