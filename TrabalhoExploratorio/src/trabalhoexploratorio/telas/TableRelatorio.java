@@ -4,18 +4,22 @@
  */
 package trabalhoexploratorio.telas;
 
+import javax.swing.JOptionPane;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+
 /**  TRABALHO EXPLORATORIO DE PROGRAMÇÃO ORIENTADA A OBJETOS - 2022/10
  *
  * @author José Samuel Pereira                 - Ra: 22016916-2 - Pura Fome
  * @author Karla duarte Ferreira               - Ra: 21144154-2
  * @author eduardo richard da silva nascimento - Ra: 21161812-2
  */
-public class ProgressBarRelatorio extends javax.swing.JFrame {
+public class TableRelatorio extends javax.swing.JFrame {
 
     /**
-     * Creates new form ProgressBarRelatorio
+     * Creates new form TableRelatorio
      */
-    public ProgressBarRelatorio() {
+    public TableRelatorio() {
         initComponents();
     }
 
@@ -29,42 +33,47 @@ public class ProgressBarRelatorio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btVoltar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-
-        btVoltar.setText("Voltar");
-        btVoltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btVoltarActionPerformed(evt);
+        jPanel1.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel1AncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
             }
         });
 
-        jLabel1.setText("<html><center> <b>Relatório sobre o uso da progress bar</b></center> <br> <br> <br> <br>   sobre o jprogressbar, este elemento é um componente que mostra o progresso de uma tarefa<br>  ele é usado principalmente para tarefas que demoram muito tempo para serem concluídas,<br>  como a cópia de um arquivo ou a transferência de um arquivo de um servidor para o <br>  computador do usuário, porem neste caso foi implementado apenas para fins de estudo.<br>  sobre seu código, ele é composto por um valor minimo, um valor maximo e um valor atual<br>  o valor minimo é o valor minimo que o progresso pode ter, o valor maximo é o valor maximo<br>  que o progresso pode ter e o valor atual é o valor atual do progresso, este valor é<br>  incrementado a cada iteração de loop de repetição ou uma etapa de um processo, <br> ");
+        jLabel1.setText("<html><b>TRABALHO EXPLORATORIO DE PROGRAMÇÃO ORIENTADA A OBJETOS - 2022/10</b><br> <br> <br>Implementação e descrição do código, para os componentes table,  presente na tela anterior <br>e scroll Pane, presente nessa tela, devido ao tamanho do texto. <br> <br><center><b>TABLE.</b></center> <br>Sobre Table podemos dizer que é uma classe  que permite a criação de uma tabela, com linhas e <br>colunas, onde podemos inserir dados, e também podemos editar, excluir e adicionar novas linhas <br>e colunas. <br>podendo ser  feito direto no código, ou através do NetBeans, como foi feito nesse trabalho. <br>a tabela pode ser preenchida com dados de um banco de dados, ou de um array, como foi feito <br>nesse  trabalho. <br> <br><center><b>SCROLL PANE.</b></center> <br>Sobre Scroll Pane podemos dizer que é uma classe que permite a criação de uma barra de rolagem, <br>que permite que o  usuário possa rolar a tela, para ver o restante do texto, que não cabe na tela. <br>podendo ser feito direto no código, ou através do NetBeans, como foi feito nesse trabalho. ");
         jScrollPane1.setViewportView(jLabel1);
+
+        jButton1.setText("VOLTAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(btVoltar, javax.swing.GroupLayout.DEFAULT_SIZE, 611, Short.MAX_VALUE))
-                .addContainerGap())
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 662, Short.MAX_VALUE)
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btVoltar)
-                .addGap(30, 30, 30))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addGap(0, 20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -81,13 +90,18 @@ public class ProgressBarRelatorio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltarActionPerformed
-        // botão voltar para a tela progress bar
-        // e fecha a tela atual
-        new ProgressBar().setVisible(true);
-        this.dispose();
+    private void jPanel1AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel1AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel1AncestorAdded
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // botão para voltar a tela anterior Table 
+        // e fechar a tela atual
+        Table table = new Table();
+        table.setVisible(true);
+        dispose();
         
-    }//GEN-LAST:event_btVoltarActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,26 +120,28 @@ public class ProgressBarRelatorio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ProgressBarRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TableRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ProgressBarRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TableRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ProgressBarRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TableRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ProgressBarRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TableRelatorio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
+    
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ProgressBarRelatorio().setVisible(true);
+                new TableRelatorio().setVisible(true);
+            
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btVoltar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

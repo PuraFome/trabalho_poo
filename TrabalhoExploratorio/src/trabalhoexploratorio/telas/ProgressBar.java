@@ -8,9 +8,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
+/**  TRABALHO EXPLORATORIO DE PROGRAMÇÃO ORIENTADA A OBJETOS - 2022/10
  *
- * @author tributech-josepereira
+ * @author José Samuel Pereira                 - Ra: 22016916-2 - Pura Fome
+ * @author Karla duarte Ferreira               - Ra: 21144154-2
+ * @author eduardo richard da silva nascimento - Ra: 21161812-2
  */
 public class ProgressBar extends javax.swing.JFrame {
 

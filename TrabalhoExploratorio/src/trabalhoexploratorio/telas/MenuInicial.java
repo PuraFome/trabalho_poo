@@ -44,7 +44,7 @@ public class MenuInicial extends javax.swing.JFrame {
 
         jLabel1.setText("=-=-=-=-=-=-=-=-MENU INICIAL=-=-=-=-=-=-=-=-");
 
-        scrollTable.setText("<<Scroll Bar com Table>>");
+        scrollTable.setText("<<Table e Scroll Bar>>");
         scrollTable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 scrollTableActionPerformed(evt);
@@ -52,6 +52,11 @@ public class MenuInicial extends javax.swing.JFrame {
         });
 
         jButton3.setText("jButton3");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("jButton4");
 
@@ -104,7 +109,7 @@ public class MenuInicial extends javax.swing.JFrame {
                 .addComponent(jButton5)
                 .addGap(30, 30, 30)
                 .addComponent(jButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
                 .addComponent(jButton8)
                 .addContainerGap())
         );
@@ -135,9 +140,13 @@ public class MenuInicial extends javax.swing.JFrame {
     private void scrollTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scrollTableActionPerformed
         // botão para abrir a tela ScrollBarTable e fechar a tela atual
 
-        new ScrollbarComTable().setVisible(true);
+        new Table().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_scrollTableActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
